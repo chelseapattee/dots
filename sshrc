@@ -1,0 +1,6 @@
+# -*- mode: sh -*-
+
+# TODO(benr): get more clarity on exactly when this is run
+if [ -S "${SSH_AUTH_SOCK}" ]; then
+    ln -sf "${SSH_AUTH_SOCK}" "${HOME}/.ssh/ssh_auth_sock"
+fi

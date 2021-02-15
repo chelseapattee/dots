@@ -1,0 +1,10 @@
+# -*- mode: sh -*-
+
+# system wide settings
+[ -f /etc/bashrc ] && source /etc/bashrc
+
+# source everything under `$BASH_SOURCE/lib`
+LIBDIR="$(dirname $(readlink ${BASH_SOURCE}))/lib"
+for SRC in $(ls "${LIBDIR}"); do
+  source "${LIBDIR}/${SRC}"
+done

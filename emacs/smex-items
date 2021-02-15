@@ -1,0 +1,17 @@
+
+;; ----- smex-history -----
+(
+ git-grep
+ make-directory
+ cd
+ 5x5
+ arp
+ dbx
+ dig
+)
+
+;; ----- smex-data -----
+(
+ (make-directory . 1)
+ (git-grep . 15)
+)
